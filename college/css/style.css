@@ -1,0 +1,22 @@
+#overlay{
+	display: none;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: -1;
+	background: rgba(77, 77, 77, 0.7);
+}
+
+#modal{
+	max-width: 500px;
+	height: 700px;
+	margin: auto;
+	background-color: white;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}

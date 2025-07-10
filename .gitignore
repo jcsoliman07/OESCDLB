@@ -1,0 +1,24 @@
+# Ignore all image files
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+*.svg
+images/
+image/
+img/
+uploads/
+
+
+# Ignore vendor files if you're using Composer (optional)
+vendor/
+
+# Ignore database export if you don’t want to share it publicly
+oescdlb.sql
+
+# Ignore config files with sensitive credentials
+config.php
+db_conn.php
+db_connection.php
+.env

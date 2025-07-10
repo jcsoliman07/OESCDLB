@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  	font-family: 'Poppins', sans-serif;
+}
+
+.container{
+	display: flex;
+	justify-content: center;
+	background:ghostwhite;
+	flex-wrap: wrap;
+}
+
+.cards{
+	position: relative;
+	width: 550px;
+	margin: 30px;
+	padding: 10px;
+	transition: 0.5s;
+}
+
+.card-img img{
+	background: white;
+	padding: 30px;
+	width: 100%;
+	height: 400px;
+}
+
+.card-body{
+	width: 100%;
+	background: white;
+	padding: 15px;
+}
+
+.card-body h2{
+	text-align: center;
+}
+
+.collapse{
+  width: 100%;
+  justify-content: center;
+  align-items: center; 
+}
+
+.collapse .hr2 {
+  border: 0;
+  height: 3px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #044735, rgba(0, 0, 0, 0));
+}
+
+.accordion{
+  width: 100%;
+  /*padding: 40px;*/
+}
+
+.accordion .contentBox{
+  position: relative;
+  /*margin: 10px 20px;*/
+  box-shadow: 0 10px 25px rgb(1 1 1/15%);
+}
+
+.accordion .contentBox .mylabel{
+  position: relative;
+  padding: 20px;
+  color: #333;
+  cursor: pointer;
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+.accordion .contentBox .mylabel::before{
+  content: '+';
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  font-size: 1.5em;
+}
+.accordion .contentBox.active .mylabel{
+  color: #dec348;
+  box-shadow: 0 10px 25px rgb(1 1 1/10%);
+}
+
+.accordion .contentBox.active .mylabel::before{
+  content: '-';
+  color: #333;
+}
+
+.accordion .contentBox .myContent{
+  position: relative;
+  /*background: ghostwhite;*/
+  height: 0;
+  overflow: hidden;
+  transition: 1s;
+  overflow-y: auto;
+}
+
+.accordion .contentBox .myContent p{
+  font-size: 1em;
+}
+
+.accordion .contentBox.active .myContent{
+  height: 200px;
+  padding: 30px;
+}
+

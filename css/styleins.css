@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+
+body{
+	background: ghostwhite;
+}
+
+.section-ins-head{
+  /*position: relative;*/
+  min-height: 100vh;
+  min-height: 40vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  text-align: center;
+  padding-top: 7%;
+
+  animation: fadeInAnimation ease 1.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+      0% {
+          opacity: 0;
+      }
+      100% {
+          opacity: 1;
+       }
+  }
+
+.section-ins-head:before{
+  position: absolute;
+  width: 100%;
+  height: 80px;
+  bottom: 0;
+}
+
+.section-ins-head h1{
+  color: #fff;
+  text-shadow: 5px 5px 3px black;
+  font-size: 3.5vw;
+  font-weight: 800;
+  background: rgba(4, 71, 53, 0.9);
+  background-repeat: no-repeat, repeat;
+  background-image: url(../image/image7-1.png);
+  background-size: 100% 162%;
+  background-blend-mode: multiply;
+  padding: 50px 20% 30px 20%;
+}
+
+.section-ins{
+	margin-top: 7%;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.card-ins{
+	height: 500px;
+	width: 290px;
+	margin: 20px;
+	box-shadow: 0 3px 5px #000;
+	border-radius: 10px;
+	overflow: hidden;
+	text-align: center;
+	background: white;
+}
+
+.card-ins .bg-image-ins img{
+	width: 100%;
+	height: 230px;
+	object-fit: cover;
+	clip-path: polygon(0 0, 100% 0%, 100% 70%, 45% 100%, 0 70%);
+}
+
+
+.card-ins .card-pic-ins img{
+	height: 120px;
+	width: 120px;
+	border-radius: 50%;
+	border: 10px solid #dec348;
+	margin-top: -90px;
+	position: relative;
+}
+
+.card-ins .card-info-ins h3{
+	color: #044735;
+	font-size: 1.4em;
+	padding: 10px 0;
+}
+
+.card-ins .card-info-ins span{
+	font-size: 1em;
+	color: #dec348;
+}
+
+.card-ins .card-info-ins p{
+	font-size: 13px;
+	padding: 10px 20px;
+	color: #999;
+}
+
+.card-ins .card-icons-ins a{
+	font-size: 2em;
+	text-decoration: none;
+	color: #044735;
+}
+
+.card-ins .card-icons-ins a:hover{
+	color: #dec348;
+}
+
